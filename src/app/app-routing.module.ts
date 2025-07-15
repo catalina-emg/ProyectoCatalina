@@ -47,13 +47,22 @@ const routes: Routes = [
     path: 'infinite',
     loadChildren: () => import('./pagina/infinite/infinite.module').then( m => m.InfinitePageModule)
   },
- 
   {
     path: 'input',
     loadChildren: () => import('./pagina/input/input.module').then( m => m.InputPageModule)
   },
-
-
+  {
+    path: 'modal',
+    loadChildren: () => import('./pagina/modal/modal.module').then( m => m.ModalPageModule)
+  },
+  {
+    path: 'popover',
+    loadChildren: () => import('./pagina/popover/popover.module').then( m => m.PopoverPageModule)
+  },
+  {
+    path: 'list',
+    loadChildren: () => import('./pagina/list/list.module').then( m => m.ListPageModule)
+  },
 
 ];
 @NgModule({
