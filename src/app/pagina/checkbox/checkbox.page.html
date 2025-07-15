@@ -1,0 +1,10 @@
+<app-header titulo="CheckBox"></app-header>
+<ion-content [fullscreen]="true">
+  <ion-list>
+    @for (infoNombre of infoNombres; track infoNombre) {
+      <ion-item>
+        <ion-checkbox [indeterminate]="infoNombre.beca">{{ infoNombre.name }}</ion-checkbox>
+      </ion-item>
+    }
+  </ion-list>
+</ion-content>
